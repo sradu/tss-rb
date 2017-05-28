@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Glenn Rempe']
   spec.email         = ['glenn@rempe.us']
 
-  spec.required_ruby_version = '>= 2.2.2'
+  spec.required_ruby_version = '>= 2.1.0'
 
   cert = File.expand_path('~/.gem-certs/gem-private_key_grempe_2026.pem')
   if cert && File.exist?(cert)
@@ -48,7 +48,7 @@ Gem::Specification.new do |spec|
   spec.executables   << 'tss'
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'activesupport', '>= 4.0.0'
+  spec.add_dependency 'activesupport', '>= 3.0.0'
   spec.add_dependency 'sysrandom', '>= 1.0.3', '~> 1.0.4'
   spec.add_dependency 'contracts', '~> 0.14'
   spec.add_dependency 'binary_struct', '~> 2.1'
